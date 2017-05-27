@@ -10,7 +10,7 @@ import { Cache } from './cache-component/cache.component';
 import { CheckAccess } from './check-access-component/check-access.component';
 import { Debounce } from './debounce-component/debounce.component';
 import { Throttle } from './throttle-component/throttle.component';
-import  { Timing } from './timing-component/timing.component';
+import { Timing } from './timing-component/timing.component';
 
 @NgModule({
   declarations: [
@@ -58,7 +58,11 @@ import  { Timing } from './timing-component/timing.component';
       }
     ])
   ],
-  providers: [],
-  bootstrap: [AppComponent]
+  providers: [
+   
+  ],
+  bootstrap: [
+    AppComponent
+  ]
 })
 export class AppModule { }

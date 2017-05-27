@@ -1,12 +1,15 @@
-<h1>
-  {{title}}
-</h1>
-<nav>
-  <a routerLink="/log">Log decorator</a>
-  <a routerLink="/cache">Cache decorator</a>
-  <a routerLink="/timing">Timing decorator</a>
-  <a routerLink="/throttle">Throttle decorator</a>
-  <a routerLink="/debounce">Debouncw decorator</a>
-  <a routerLink="/check-access">Check-access decorator</a>
-</nav>
-<router-outlet></router-outlet>
+<body class="about">
+  <header>
+    <div class="nav">
+      <ul>
+        <li class="log"><a routerLink="/log" routerLinkActive="active">Log decorator</a></li>
+        <li class="cache"><a routerLink="/cache" routerLinkActive="active">Cache decorator</a></li>
+        <li class="timing"><a routerLink="/timing" routerLinkActive="active">Timing decorator</a></li>
+        <li class="throttle"><a routerLink="/throttle" routerLinkActive="active">Throttle decorator</a></li>
+        <li class="debounce"><a routerLink="/debounce" routerLinkActive="active">Debounce decorator</a></li>
+        <li class="check-access"><a routerLink="/check-access" routerLinkActive="active">Check-access decorator</a></li>
+      </ul>
+      <router-outlet></router-outlet>
+    </div>
+  </header>
+</body>
