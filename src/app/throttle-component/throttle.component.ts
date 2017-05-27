@@ -2,8 +2,8 @@ import { Component } from '@angular/core';
 
 @Component({
   selector: 'throttle',
-  templateUrl: './cache.component.html',
-  styleUrls: ['./cache.component.css']
+  templateUrl: './throttle.component.html',
+  styleUrls: ['./throttle.component.css']
 })
 export class Throttle {
   
