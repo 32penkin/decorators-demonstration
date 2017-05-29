@@ -1,5 +1,5 @@
-import {Component} from '@angular/core';
-import {debounce} from '../../../node_modules/try-decorators/src/debounce.decorator';
+import { Component } from '@angular/core';
+import { debounce } from 'try-decorators';
 
 @Component({
   selector: 'debounce',
@@ -11,11 +11,19 @@ export class Debounce {
   count2: number = 0;
   
   @debounce(2000)
-  upCount() {
+  upCountDebouce() {
     this.count1++;
   }
   
-  upCountWODebounce() {
+  upCount() {
     this.count2++;
+  }
+  
+  onClick() {
+    this.upCount();
+  }
+  
+  onClickDebouce() {
+    this.upCountDebouce();
   }
 }

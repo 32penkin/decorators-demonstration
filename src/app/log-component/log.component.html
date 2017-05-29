@@ -1,23 +1,13 @@
-<body>
-  <h2>Log decorator</h2>
+<h2>Log decorator</h2>
+
+<label>input var 1</label>
+<input type="text" [(ngModel)]="field">
 
 
+<button (click)="onclick()">Start</button>
+
+<ul>
+    <li *ngFor="let item of arr">{{item}}</li>
+</ul>
 
 
-  <label>input var 1</label>
-  <input type="text" [(ngModel)]="a">
-
-  <label>input var 2</label>
-  <input type="text" [(ngModel)]="b">
-
-  <button (click)="add(a, b)">Start</button>
-
-  <!--<div>-->
-    <!--<ul>-->
-      <!--<li *ngFor="let result of results">-->
-        <!--<span>{{result.args}}</span>-->
-        <!--<span>{{result.res}}</span>-->
-      <!--</li>-->
-    <!--</ul>-->
-  <!--</div>-->
-</body>

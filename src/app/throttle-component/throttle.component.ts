@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { throttle } from '../../../node_modules/try-decorators/src/throttle.decorator';
+import { throttle } from 'try-decorators';
 
 @Component({
   selector: 'throttle',
@@ -12,5 +12,9 @@ export class Throttle {
   @throttle(2000)
   doubleCount() {
     this.count = this.count + 2;
+  }
+  
+  onClick() {
+    this.doubleCount();
   }
 }
