@@ -7,19 +7,24 @@ import { log } from 'try-decorators';
   styleUrls: ['./log.component.css']
 })
 export class Log implements OnInit {
-  field: any;
-  arr: any[];
+  a: number;
+  b: number;
+  arr: any[] = [];
 
   ngOnInit(): void {
     document.addEventListener('log', (data: CustomEvent) => {
-      this.arr = data.detail;
+     this.arr.push(data.detail);
     }, false);
   }
 
-
-
-  @log('hello')
+  
   onclick() {
-    console.log(this.field);
+    this.add(this.a, this.b);
   }
+
+  @log('hello') 
+  add(a, b) {
+    return a + b;
+  }
+
 }

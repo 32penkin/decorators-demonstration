@@ -1,13 +1,14 @@
 <h2>Log decorator</h2>
 
 <label>input var 1</label>
-<input type="text" [(ngModel)]="field">
+<input type="number" [(ngModel)]="a">
+<input type="number" [(ngModel)]="b">
 
 
 <button (click)="onclick()">Start</button>
 
 <ul>
-    <li *ngFor="let item of arr">{{item}}</li>
+    <li *ngFor="let item of arr"><hr>{{item}}</li>
 </ul>
 
 
