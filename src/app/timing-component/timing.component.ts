@@ -9,7 +9,8 @@ import { timingDecorator } from 'try-decorators';
 export class Timing {
   num: number;
   arr: any[] = [];
-    ngOnInit(): void {
+
+  ngOnInit(): void {
     document.addEventListener('log', (data: CustomEvent) => {
      this.arr.push(data.detail);
     }, false);
