@@ -7,12 +7,12 @@ import { cacheDecorator, timingDecorator } from 'try-decorators';
   styleUrls: ['./cache.component.css']
 })
 export class Cache implements OnInit {
-  num: number;
+  num: number = 0;
   arr: any[] = [];
 
   ngOnInit(): void {
     document.addEventListener('log', (data: CustomEvent) => {
-     this.arr.push(data.detail);
+      this.arr.push(data.detail);
     }, false);
   }
  
