@@ -1,3 +1,5 @@
+@import url(https://fonts.googleapis.com/css?family=Khula);
+
 body {
   margin: 0;
   padding: 0;
@@ -6,14 +8,14 @@ body {
 
 nav ul {
   list-style: none;
-  background-color: #444;
+  background-color: black;
   text-align: center;
   padding: 0;
   margin: 0;
 }
 
 nav li {
-  font-family: 'Oswald', sans-serif;
+  font-family: 'Khula', sans-serif;
   font-size: 1.2em;
   line-height: 40px;
   height: 40px;
@@ -21,18 +23,18 @@ nav li {
 
 nav a {
   text-decoration: none;
-  color: #fff;
+  color: whitesmoke;
   display: block;
   transition: .3s backgroung-color;
 }
 
 nav a:hover {
-  background-color: #005f5f;
+  color: #ffff05;
 }
 
 .active {
-  background-color: #BDBDBD;
-  color: #fff;
+  background-color: black;
+  color: #ffff05;
   cursor: default;
 }
 
