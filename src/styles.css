@@ -76,3 +76,24 @@ button:active {
     transition: all .15s ease;
 }
 
+input[type="text"], input[type="number"] {
+    background: #57575e;
+    border-radius: 5px;
+    border-top-color: rgba(1, 34, 114, 0.6);
+    border: 1px solid rgba(25, 53, 71, 0.04);
+    box-shadow: 0 1px 0 rgba(255, 255, 255, 0.1);
+    color: white;
+    font-size: 13px;
+    height: 48px;
+    outline: 0;
+    padding-left: 20px;
+    transition: background .55s ease;
+    width: 260px;
+    user-select: text;
+    cursor: auto;
+}
+
+input[type="text"]:hover, input[type="number"]:hover {
+    background: #76767c;
+    color: white;
+}
