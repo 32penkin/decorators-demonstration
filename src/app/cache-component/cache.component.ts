@@ -18,16 +18,17 @@ export class Cache implements OnInit {
  
   @timingDecorator
   @cacheDecorator
-  fact(n) {
-    let tot = 1;
-    for(let i = 2; i <= n; i++) {
-      tot *= i;
-    }
-    return tot;
+  someDelay(n: number): Promise<number> {
+    return new Promise((resolve, reject) => {
+      setTimeout(function() {
+       resolve(n * 20);
+      }, 2000);
+    });
   }
 
   onClick() {
-    this.fact(this.num);
+    this.someDelay(this.num)
+      .then(data => {return data});
   }
 
 }
