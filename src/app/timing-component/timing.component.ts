@@ -17,16 +17,17 @@ export class Timing {
   }
 
   @timingDecorator
-  fact(n) {
-    let tot = 1;
-    for(let i = 2; i <= n; i++) {
-      tot *= i;
-    }
-    return tot;
+  someDelay(): Promise<number> {
+    return new Promise((resolve, reject) => {
+      setTimeout(function() {
+       resolve(null);
+      }, 2000);
+    });
   }
-
+  
   onClick() {
-    this.fact(this.num);
+    this.someDelay()
+      .then(data => console.log(data));
   }
   
 }

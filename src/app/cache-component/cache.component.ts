@@ -16,6 +16,7 @@ export class Cache implements OnInit {
     }, false);
   }
  
+  @timingDecorator
   @cacheDecorator
   fact(n) {
     let tot = 1;

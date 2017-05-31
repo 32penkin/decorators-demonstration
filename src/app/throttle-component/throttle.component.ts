@@ -11,7 +11,7 @@ export class Throttle {
   
   @throttle(2000)
   doubleCount() {
-    this.count = this.count + 2;
+    this.count += 2;
   }
   
   onClick() {
