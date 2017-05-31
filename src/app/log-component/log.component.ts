@@ -17,12 +17,11 @@ export class Log implements OnInit {
     }, false);
   }
 
-  
   onclick() {
     this.add(this.a, this.b);
   }
 
-  @log('hello') 
+  @log('Hello from log decorator') 
   add(a, b) {
     return a + b;
   }

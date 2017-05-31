@@ -1,0 +1,32 @@
+.cont {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.head, .demo {
+    text-align: center;
+}
+
+input {
+    max-width: 80px;
+    color: #eaeaef;
+}
+
+.plus {
+    padding: 0 10px;
+}
+
+.for-inp {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.res-cont {
+    list-style: none;
+}
+
+.res {
+    max-width: 800px;
+    margin: 0 auto;
+}
