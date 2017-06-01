@@ -1,8 +1,13 @@
-<h1>Timing decorator</h1>
+<div class="cont">
+    <h2 class="head">Timing decorator</h2>
+    <h4 class="descr">Any decorating method can be wrapped. In the browser console you can see the result of the method execution as well, working time of this method.</h4>
+    <p class="demo">To demonstrate the work of the decorator, a simple method is proposed, which returns NULL with artificial delay, which u have to set.</p>
+    <div class="for-inp">
+        <input type="number" class="inp" placeholder="value" [(ngModel)]="ms">
+        <button (click)="onClick()">Go!</button>
+    </div>
 
-<input type="number" [(ngModel)]="num">
-<button (click)="onClick()">Go!</button>
-
-<ul>
-    <li *ngFor="let item of arr"><hr>{{item}}</li>
-</ul>
+    <ul class="res-cont">
+        <li class="res" *ngFor="let item of arr"><hr>{{item}}<hr></li>
+    </ul>
+</div>

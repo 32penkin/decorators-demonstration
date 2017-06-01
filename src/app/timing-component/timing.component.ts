@@ -7,7 +7,7 @@ import { timingDecorator } from 'try-decorators';
   styleUrls: ['./timing.component.css']
 })
 export class Timing {
-  num: number;
+  ms: number;
   arr: any[] = [];
 
   ngOnInit(): void {
@@ -17,16 +17,16 @@ export class Timing {
   }
 
   @timingDecorator
-  someDelay(): Promise<number> {
+  someDelay(delay): Promise<number> {
     return new Promise((resolve, reject) => {
       setTimeout(function() {
        resolve(null);
-      }, 2000);
+      }, delay);
     });
   }
   
   onClick() {
-    this.someDelay()
+    this.someDelay(this.ms)
       .then(data => {return data;});
   }
   

@@ -1,7 +1,7 @@
 <div class="cont">
     <h2 class="head">Cache decorator</h2>
     <h4 class="descr">Any decorating method can be wrapped. In the browser console you can see the result of the method execution as well, this method was cached earlier.</h4>
-    <p class="demo">To demonstrate the work of the decorator, a simple method is proposed, which returns factorial of entered number. Below you can see the results of his work.</p>
+    <p class="demo">To demonstrate the work of the decorator, a simple method is proposed, which returns (X * 20) of entered number with artificial delay. But if the args and result was cached - time of running function will very short. Below you can see the results of his work.</p>
     <div class="for-inp">
         <input type="number" class="inp" placeholder="value" [(ngModel)]="num">
         <button (click)="onClick()">Go!</button>
