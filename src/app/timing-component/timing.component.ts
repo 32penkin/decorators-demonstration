@@ -27,7 +27,7 @@ export class Timing {
   
   onClick() {
     this.someDelay()
-      .then(data => console.log(data));
+      .then(data => {return data;});
   }
   
 }

@@ -8,12 +8,21 @@ import { throttle } from 'try-decorators';
 })
 export class Throttle {
   count: number = 0;
+  count2: number = 0;
   
   @throttle(2000)
-  doubleCount() {
+  doubleCountThrottle() {
     this.count += 2;
   }
+
+  doubleCount() {
+    this.count2 += 2;
+  }
   
+  onClickThrottle() {
+    this.doubleCountThrottle();
+  }
+
   onClick() {
     this.doubleCount();
   }

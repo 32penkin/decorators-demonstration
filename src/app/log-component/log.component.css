@@ -3,30 +3,37 @@
     margin: 0 auto;
 }
 
-.head, .demo {
+.head {
     text-align: center;
 }
 
 input {
     max-width: 80px;
-    color: #eaeaef;
+    height: 40px;
 }
 
 .plus {
     padding: 0 10px;
 }
 
+.inp2 {
+    margin-right: 10px;
+}
+
 .for-inp {
     max-width: 800px;
-    margin: 0 auto;
-    text-align: center;
+}
+
+.for-inp button {
+    height: 40px;
 }
 
 .res-cont {
     list-style: none;
+    margin: 0;
+    padding: 0;
 }
 
 .res {
     max-width: 800px;
-    margin: 0 auto;
 }
