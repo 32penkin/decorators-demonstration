@@ -14,7 +14,6 @@ input {
     height: 40px;
 }
 
-
 .for-inp {
     padding: 0;
     margin: 0;
@@ -24,11 +23,18 @@ input {
 input[type="checkbox"] {
     margin: 0;
     padding: 0;
-    width: 20px;
-    height: 20px;
+    width: 40px;
+    height: 40px;
+    margin: auto 0;
 }
 
 button {
     margin-left: 10px;
     height: 40px;
+    width: 100px;
+    margin: auto 0;
+}
+
+label {
+    font-size: 20px;
 }

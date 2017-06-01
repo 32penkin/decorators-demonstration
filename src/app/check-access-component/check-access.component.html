@@ -3,9 +3,11 @@
     <h4 class="descr">In the access decorator, a function is passed that returns a boolean value. If it returns the true - to allow the execution of the function to be decorated, otherwise - no.</h4>
     <p class="demo">The passed function simulates the checkbox.</p>
     <div class="for-inp">
-        <label class="value">
-            <input type="checkbox" [(ngModel)]="isActive"/>{{isActive}}
-        </label>
+        <div>
+            <label class="value">
+                <input type="checkbox" [(ngModel)]="isActive"/>{{isActive}}
+            </label>
+        </div>
 
         <button (click)="onClick()">Check access</button>
     </div>
