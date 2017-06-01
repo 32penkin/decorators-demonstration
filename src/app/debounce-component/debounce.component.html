@@ -1,5 +1,15 @@
-<div>
-  <button class="btn" (click)="onClickDebouce()">{{count1}}</button>
-  <button class="btn" (click)="onClick()">{{count2}}</button>
+<div class="cont">
+    <h2 class="head">Debounce decorator</h2>
+    <h4 class="descr">Debounce a function when you want it to execute only once after a defined interval of time. If the event occurs multiple times within the interval, the interval is reset each time.</h4>
+    <p class="demo">To demonstrate the work of the decorator, 2 buttons have been added to increase the counter by 1. One of them increases linearly, the second one is delayed and run function after delay.</p>
+    <table>
+      <tr class="tab-head">
+        <th class="tab-head-1">Counter with @Debounce of 2000 ms</th>
+        <th class="tab-head-2">Counter without @Debounce</th>
+      </tr>
+      <tr class="tab-body">
+        <td class="for-btn"><button class="btn" (click)="onClickDebouce()">{{count1}}</button></td>
+        <td class="for-btn"><button class="btn" (click)="onClick()">{{count2}}</button></td>
+      </tr>
+    </table>
 </div>
-
