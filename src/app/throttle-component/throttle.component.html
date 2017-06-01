@@ -1,4 +1,15 @@
-<div>
-  <button class="btn" (click)="onClickThrottle()">{{count}}</button>
-   <button class="btn" (click)="onClick()">{{count2}}</button>
+<div class="cont">
+    <h2 class="head">Throttle decorator</h2>
+    <h4 class="descr">Throttle is a function when you want it to execute periodically with an interval in between each execution and remember the last state.</h4>
+    <p class="demo">To demonstrate the work of the decorator, 2 buttons have been added to increase the counter by 2. One of them increases linearly, the second one is delayed and the last state is memorized during the delay.</p>
+    <table>
+      <tr class="tab-head">
+        <th class="tab-head-1">Counter with @Throttle of 2000 ms</th>
+        <th class="tab-head-2">Counter without @Throttle</th>
+      </tr>
+      <tr class="tab-body">
+        <td class="for-btn"><button class="btn" (click)="onClickThrottle()">{{count}}</button></td>
+        <td class="for-btn"><button class="btn" (click)="onClick()">{{count2}}</button></td>
+      </tr>
+    </table>
 </div>

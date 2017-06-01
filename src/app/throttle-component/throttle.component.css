@@ -1,0 +1,24 @@
+.cont {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.head {
+    text-align: center;
+}
+
+.tab-head {
+    border-bottom: 50px;
+}
+
+.tab-head-1 {
+    padding-right: 50px;
+}
+
+.for-btn {
+    text-align: center;
+}
+
+button {
+    height: 40px;
+}
